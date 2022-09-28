@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-15-Tu 20:15:53
- * @LastEditors: Nuoya nuoya.shao@outlook.com
- * @LastEditTime: 2022-07-06 18:08:55
+ * @LastEditors: SHAO Nuoya
+ * @LastEditTime: 2022-09-28 16:10:08
  * @FilePath: \JLT_Projet\readme.md
 -->
 # JLT model, construction and calibration
@@ -12,13 +12,8 @@
 - Vs code (recommanded)
 
 ## Configurations
-- copy **S:\MESURE\Mesure du risque\05. Internal Model\2022\09.Credit_Sto\JLT_Projet** to your own disk, and it will be your projec path
 - add project path to PYTHONPATH (optional)
-- unzip **site-packages.zip** in **[your project path]/packages**
-- replace **[your Anaconda file path]/Anaconda3/Lib/site-packages** by the 
-  one unzipped. \
-  or (in the case where you can install packages directly) \
-    run commands as below in cmd:
+- run commands as below in cmd:
     * `cd [your project path]`
     * `pip install -r requirements.txt`
 - in JLT/main.py, replace **sys.path.append("C:\\Users\\SHAO\\Desktop\\JLT_Projet")** by
