@@ -1,0 +1,60 @@
+[calibrate]
+bond_type = "CORP"
+schema = "QE"
+seed = 5888415118661956377
+states = [ "AAA", "AA", "A", "BBB", "BB", "B",]
+algo = "Powell"
+t = 0
+weight_rate_list = [ "AA", "BBB",]
+weight_year_list = [ [ 3, 4, 5, 6, 7,], [ 3, 4, 5, 6, 7,],]
+weight_val_list = [ [ 10, 10, 10, 10, 10,], [ 10, 10, 10, 10, 10,],]
+l_alpha = 0.0
+u_alpha = 1.0
+n_alpha = 1
+l_sigma = 0.0
+u_sigma = 5.0
+n_sigma = 3
+l_pi_0 = 0.0
+u_pi_0 = 3.0
+n_pi_0 = 1
+l_mu = 0.0
+u_mu = 5.0
+n_mu = 2
+l_rec = 0.0
+u_rec = 0.0
+n_rec = 1
+
+[path]
+cali_result_path = "JLT/Result/calibration/CONSTR/CORP_AA_BBBweight(3-7)=10_10_rec=0_parameter.csv"
+market_data_path = "JLT/data/CS_31122020.xlsx"
+transition_matrix_path = "JLT/data/TransitionProbabilityMatrix.csv"
+esg_paras_path = "JLT/Result/calibration/CONSTR/CORP_AA_BBBweight(3-7)=10_10_rec=0_parameter.csv"
+esg_spread_result_path = "JLT/Result/ESG/spread_esg.csv"
+esg_prob_result_path = "JLT/Result/ESG/prob_esg.csv"
+
+[constant]
+DISCERT_DT_N = 12
+
+[esg]
+N = 1000
+seed = 5888415118661956377
+dTs = [ 0.0833, 0.25, 1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 10.0, 12.0, 15.0, 20.0, 30.0, 40.0, 50.0, 60.0,]
+timestep = 60
+schema = "QE"
+bond_type = "CORP"
+states = [ "AAA", "AA", "A", "BBB", "BB", "B", "C",]
+
+[common]
+all_states = [ "AAA", "AA", "A", "BBB", "BB", "B", "C", "D",]
+draw_states = [ "AAA", "AA", "A", "BBB", "BB", "B",]
+
+[vasicek]
+method = "ltq"
+mode = "CALI"
+N = 1000
+timestep = 60
+esg_path = "C:/Users/SHAO/Desktop/JLT_Projet/JLT/Result/Salary_inflation/official ESG/base/EC_RN2021Q4_VA65_EIOPA21_SCEN.csv"
+
+[main]
+mode = "CALI"
+cores = 8

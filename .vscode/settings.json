@@ -1,0 +1,4 @@
+{
+    "fileheader.Author": "SHAO Nuoya",
+    "fileheader.tpl": "\"\"\" \\n@Author: {author}  \\n@Date: {createTime}  \\n@Last Modified by:   {lastModifiedBy}  \\n@Last Modified time: {updateTime}  \\n@Contact: nuoya.shao@allianz.fr \"\"\""
+}
